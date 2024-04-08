@@ -1,7 +1,7 @@
 {
   "name": "payment-provider-redpay",
   "vendor": "redpaypartnercl",
-  "version": "3.1.0-beta.0",
+  "version": "3.2.0-beta.0",
   "title": "Payment Provider redpay",
   "description": "Reference app for Payment-Provider protocol implementers",
   "builders": {
