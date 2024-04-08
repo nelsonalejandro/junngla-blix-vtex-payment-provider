@@ -20,9 +20,9 @@
       "name": "colossus-write-logs"
     },
     {
-      "name": "outbound-access",
+      "name": "redpay-by-blix",
       "attrs": {
-        "host": "heimdall.vtexpayments.com.br",
+        "host": "api.dev1.blix.global",
         "path": "/api/payment-provider/callback/*"
       }
     }
