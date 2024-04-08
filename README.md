@@ -33,6 +33,8 @@ vtex use {examplename}
 
 ### Step 2: Editing the Payment app
 
+> ⚠️ This app is deprecated, step 2 should only be taken in case of deploying the app in a production environment.
+
 1. Using your terminal, clone the *Payment* app boilerplate repository to your local files by running:
 
 ```shell
@@ -56,6 +58,8 @@ vtex link
 
 ### Step 3: Running the *Payment* app
 
+> ⚠️ When testing in a workspace do not change the app name and vendor. You must keep all params in the boilerplate unchanged
+
 1. Using your browser, go to `http://{workspace}--{account}.myvtex.com/checkout?workspace={workspace}`.
 
 > ⚠️ Remember to replace the values between the curly brackets according to your scenario
@@ -65,8 +69,26 @@ vtex link
 ```javascript
 window.transactionAppName = '{app-name}'
 ```
+* When testing in your workspace:
+```
+window.transactionAppName = 'example-payment-auth-app'
+```
 
 Now, if you go through the *checkout process*, you'll notice an additional verification step (set in our *Payment* app) after the *Order confirmation*.
+
+3. Testing a Payment app flow:
+
+By following the next steps, a Payment app will appear on the checkout screen allowing you to test the Payment app general flow.
+
+> ℹ️ Proceed with the following steps only with you want to test a Payment app flow, otherwise, skip to [Step 4: Deploying the Payment app](#step-4-deploying-the-payment-app).
+
+&nbsp;&nbsp;  3.1. Make sure you have the Test Connector with the VTEX Example Payment app configured in your account. If you do not have it yet, contact the [VTEX Support Team](https://help.vtex.com/en/tutorial/opening-tickets-to-vtex-support) to help you with the installation process.
+
+&nbsp;&nbsp;  3.2. Fill in the last name of the personal information with the word "Application".
+
+&nbsp;&nbsp;  3.3. Select the payment condition associated with the Test Connector and finish the purchase in order to test the flow.
+
+> ⚠️ It is not possible to test the specific flow of each Payment app built.
 
 
 ### Step 4: Deploying the *Payment* app

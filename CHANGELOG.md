@@ -2,61 +2,65 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-## [3.0.0] - 2024-04-08
-
-## [2.0.0] - 2024-04-08
-### Added
-- Included `customFields` option to `configuration.json`
-### Changed
-- Updated README style
-- Fixed connector testing instructions
-- Improved readability
-
-## [1.2.0] - 2021-12-21
-
-## [1.1.0] - 2021-12-21
-
-## [1.0.6] - 2021-11-18
+## [1.1.0] - 2022-08-19
 
 ### Added
 
-- New PPF flags
+- Migrate to TypeScript
 
-## [1.0.5] - 2021-05-20
-
-## [1.0.5] - 2021-05-20
-### Changed
-- Updated documentation in docs folder
-
-## [1.0.4] - 2021-05-17
-
-## [1.0.4] - 2021-05-12
-### Changed
-- Updated documentation in docs folder
-
-## [1.0.3] - 2021-04-28
-### Added
-- Included documentation in docs folder
-
-## [1.0.2] - 2021-03-02
-
-## [1.0.1] - 2021-03-01
-
-## [1.0.0] - 2021-02-27
-
-## [1.0.0] - 2021-02-23
+## [1.0.7] - 2019-12-26
 
 ### Changed
 
-- Update Payment Provider SDK version
+- Recaptcha key only for the publication.
 
-## [0.0.2] - 2020-02-28
+## [1.0.6] - 2019-12-26
 
 ### Added
 
-- Bootstrap for creating Payment Provider Connectors on VTEX IO
+- Remove Finishing Transaction loading event.
+
+## [1.0.5] - 2019-12-26
+
+### Added
+
+- Confirm button.
+
+## [1.0.4] - 2019-12-18
+
+### Changed
+
+- Recaptcha key only for the publication.
+
+## [1.0.3] - 2019-09-06
+
+### Changed
+
+- App to call a deny and authorize URLs for checkout forward the process correctly.
+
+## [1.0.2] - 2019-08-29
+
+- Update docs
+
+## [1.0.1] - 2019-08-29
+
+## Fixed
+
+- App payload text to fit into container.
+
+## [1.0.0] - 2019-08-28
+
+### Changed
+
+- `payload` property to `appPayload` to match value from API.
+
+## [0.3.0] - 2019-08-28
+
+### Added
+
+- Specific pages declaration for checkout to load the app.
